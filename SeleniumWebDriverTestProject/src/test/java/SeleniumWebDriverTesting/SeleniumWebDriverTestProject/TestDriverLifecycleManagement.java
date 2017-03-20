@@ -7,7 +7,7 @@ import org.junit.Before;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
-public class DriverLifecycleManagement 
+public class TestDriverLifecycleManagement 
 {
 	protected static FirefoxDriver driver;
 	

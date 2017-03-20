@@ -5,11 +5,11 @@ import org.junit.Test;
 
 
 
-public class TestRunFirefox extends DriverLifecycleManagement
+public class TestRunFirefox extends TestDriverLifecycleManagement
 {
 	
 	
-	@Test//(priority = 4)
+	@Test
 	public void testCreateNewIssue() throws InterruptedException
 	{		
 		System.out.println("Launch Test #1");
@@ -24,7 +24,7 @@ public class TestRunFirefox extends DriverLifecycleManagement
 		System.out.println("Test #1 is Passed!");
 	}		
 
-	@Test//(priority = 5)
+	@Test
 	public void testUpdateIssue() throws InterruptedException
 	{
 		System.out.println("Launch Test #2");
@@ -39,7 +39,7 @@ public class TestRunFirefox extends DriverLifecycleManagement
 		System.out.println("Test #2 is Passed!");
 	}	
 	
-	@Test//(priority = 6)
+	@Test
 	public void testDeleteIssue() throws InterruptedException
 	{
 		System.out.println("Deleting Issue...");		
