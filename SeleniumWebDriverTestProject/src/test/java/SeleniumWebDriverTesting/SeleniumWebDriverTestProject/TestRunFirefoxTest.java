@@ -5,7 +5,7 @@ import org.junit.Test;
 
 
 
-public class TestRunFirefox extends TestDriverLifecycleManagement
+public class TestRunFirefoxTest extends DriverLifecycleManagement
 {
 	
 	
