@@ -8,9 +8,9 @@ import org.junit.Test;
 public class TestRunFirefoxTest extends DriverLifecycleManagement
 {
 	
-	
+	//CreateNewIssue
 	@Test
-	public void testCreateNewIssue() throws InterruptedException
+	public void test1() throws InterruptedException
 	{		
 		System.out.println("Launch Test #1");
 		RedmineHomePageFirefox startPage = new RedmineHomePageFirefox(driver);
@@ -23,9 +23,9 @@ public class TestRunFirefoxTest extends DriverLifecycleManagement
 		startPage = myAccount.logOut();
 		System.out.println("Test #1 is Passed!");
 	}		
-
+	//UpdateIssue
 	@Test
-	public void testUpdateIssue() throws InterruptedException
+	public void test2() throws InterruptedException
 	{
 		System.out.println("Launch Test #2");
 		RedmineHomePageFirefox startPage = new RedmineHomePageFirefox(driver);
@@ -39,8 +39,9 @@ public class TestRunFirefoxTest extends DriverLifecycleManagement
 		System.out.println("Test #2 is Passed!");
 	}	
 	
+	//DeleteIssue
 	@Test
-	public void testDeleteIssue() throws InterruptedException
+	public void test3() throws InterruptedException
 	{
 		System.out.println("Deleting Issue...");		
 		RedmineHomePageFirefox startPage = new RedmineHomePageFirefox(driver);
