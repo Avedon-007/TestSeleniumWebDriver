@@ -1,19 +1,19 @@
 package SeleniumWebDriverTesting.SeleniumWebDriverTestProject;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RedmineRegisterNewIssueFirefox 
 {
-	//private final FirefoxDriver driver;
-	private final  ChromeDriver driver;
+	private final FirefoxDriver driver;
+	//private final  ChromeDriver driver;
 
-	//public RedmineRegisterNewIssueFirefox(FirefoxDriver driver)
-	public RedmineRegisterNewIssueFirefox(ChromeDriver driver)
+	public RedmineRegisterNewIssueFirefox(FirefoxDriver driver)
+	//public RedmineRegisterNewIssueFirefox(ChromeDriver driver)
 	{
 		this.driver = driver;
 	}

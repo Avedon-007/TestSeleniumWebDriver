@@ -3,8 +3,8 @@ package SeleniumWebDriverTesting.SeleniumWebDriverTestProject;
 
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
-//import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -14,11 +14,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class RedmineMyAccountPageFirefox 
 {
-	private final  ChromeDriver driver;
-	//private final FirefoxDriver driver;
+	//private final  ChromeDriver driver;
+	private final FirefoxDriver driver;
 
-	//public RedmineMyAccountPageFirefox(FirefoxDriver driver) 
-	public RedmineMyAccountPageFirefox(ChromeDriver driver) 
+	public RedmineMyAccountPageFirefox(FirefoxDriver driver) 
+	//public RedmineMyAccountPageFirefox(ChromeDriver driver) 
 	{
 		this.driver = driver;
 	}
