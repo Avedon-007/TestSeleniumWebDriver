@@ -1,16 +1,14 @@
 package SeleniumWebDriverTesting.SeleniumWebDriverTestProject;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
 
 public class RedmineLoggedInPageFirefox 
 {
-	//private final  ChromeDriver driver;
-	private final FirefoxDriver driver;
-
-	public RedmineLoggedInPageFirefox(FirefoxDriver driver) 
-	//public RedmineLoggedInPageFirefox(ChromeDriver driver) 
+	private final  ChromeDriver driver;	
+	
+	public RedmineLoggedInPageFirefox(ChromeDriver driver) 
 	{
 		this.driver = driver;
 	}

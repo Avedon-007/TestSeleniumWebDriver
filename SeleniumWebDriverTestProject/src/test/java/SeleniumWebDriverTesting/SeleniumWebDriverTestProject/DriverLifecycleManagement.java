@@ -4,23 +4,19 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.After;
 import org.junit.Before;
-import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class DriverLifecycleManagement 
-{
-	protected static FirefoxDriver driver;
-	//protected static ChromeDriver driver;
+{	
+	protected static ChromeDriver driver;
 	
 	@Before
 	public void setUpDriver()
 	{
-		System.out.println("Launching Firefox browser.");
-		System.setProperty("webdriver.gecko.driver", "D:\\Programs\\TEST\\Selenium\\geckodriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "D:\\Programs\\TEST\\Selenium\\chromedriver.exe");
-		driver = new FirefoxDriver();
-		//driver = new ChromeDriver();
+		System.out.println("Launching Firefox browser.");		
+		System.setProperty("webdriver.chrome.driver", "D:\\Programs\\TEST\\Selenium\\chromedriver.exe");
+		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://demo.redmine.org/");

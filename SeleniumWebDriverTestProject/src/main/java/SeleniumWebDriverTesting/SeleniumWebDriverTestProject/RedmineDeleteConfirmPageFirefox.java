@@ -1,22 +1,16 @@
 package SeleniumWebDriverTesting.SeleniumWebDriverTestProject;
 
-
-
 import org.openqa.selenium.By;
-//import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 public class RedmineDeleteConfirmPageFirefox 
 {
-	//private final  ChromeDriver driver;
-	private final FirefoxDriver driver;
+	private final  ChromeDriver driver;	
 	
-
-	public RedmineDeleteConfirmPageFirefox(FirefoxDriver driver) 
-	//public RedmineDeleteConfirmPageFirefox(ChromeDriver driver) 
+	public RedmineDeleteConfirmPageFirefox(ChromeDriver driver) 
 	{
 		this.driver = driver;
 	}
