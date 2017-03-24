@@ -6,11 +6,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class RedmineDeleteConfirmPageFirefox 
+public class RedmineDeleteConfirmPageChrome 
 {
 	private final  ChromeDriver driver;	
 	
-	public RedmineDeleteConfirmPageFirefox(ChromeDriver driver) 
+	public RedmineDeleteConfirmPageChrome(ChromeDriver driver) 
 	{
 		this.driver = driver;
 	}

@@ -14,13 +14,13 @@ public class DriverLifecycleManagement
 	@Before
 	public void setUpDriver()
 	{
-		System.out.println("Launching Firefox browser.");		
+		System.out.println("Launching Google Chrome browser.");		
 		System.setProperty("webdriver.chrome.driver", "D:\\Programs\\TEST\\Selenium\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get("http://demo.redmine.org/");
-		System.out.println("Firefox browser launched successfully");
+		System.out.println("Google Chrome browser launched successfully");
 	}		
 
 	@After

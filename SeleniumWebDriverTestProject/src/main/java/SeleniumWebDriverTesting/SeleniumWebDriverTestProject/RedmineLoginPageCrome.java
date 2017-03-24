@@ -4,16 +4,16 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class RedmineLoginPageFirefox 
+public class RedmineLoginPageCrome 
 {
 	private final  ChromeDriver driver;
 
-	public RedmineLoginPageFirefox(ChromeDriver driver)
+	public RedmineLoginPageCrome(ChromeDriver driver)
 	{
 		this.driver = driver;
 	}
 
-	public RedmineLoggedInPageFirefox logging(String login, String pass) 
+	public RedmineLoggedInPageChrome logging(String login, String pass) 
 	{
 		driver.findElement(By.id("username")).clear();
 		driver.findElement(By.id("username")).sendKeys(login);
@@ -21,7 +21,7 @@ public class RedmineLoginPageFirefox
 		driver.findElement(By.id("password")).sendKeys(pass);
 		driver.findElement(By.name("login")).submit();
 		
-		return new RedmineLoggedInPageFirefox(driver);
+		return new RedmineLoggedInPageChrome(driver);
 	}
 
 }

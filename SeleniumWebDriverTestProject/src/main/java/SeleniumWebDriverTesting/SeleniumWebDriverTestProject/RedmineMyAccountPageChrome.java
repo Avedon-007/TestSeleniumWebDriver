@@ -7,11 +7,11 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class RedmineMyAccountPageFirefox 
+public class RedmineMyAccountPageChrome 
 {
 	private final  ChromeDriver driver;	
 	
-	public RedmineMyAccountPageFirefox(ChromeDriver driver) 
+	public RedmineMyAccountPageChrome(ChromeDriver driver) 
 	{
 		this.driver = driver;
 	}
@@ -52,19 +52,19 @@ public class RedmineMyAccountPageFirefox
 		return driver.findElement(By.id("flash_notice")).getText();
 	}
 
-	public RedmineHomePageFirefox logOut() 
+	public RedmineHomePageChrome logOut() 
 	{
 		driver.findElement(By.xpath("/html/body/div/div/div[1]/div[1]/div[1]/ul/li[2]/a")).click();
-		return new RedmineHomePageFirefox(driver);
+		return new RedmineHomePageChrome(driver);
 	}
 
-	public RedmineDeleteConfirmPageFirefox openDeleteAccountPage() 
+	public RedmineDeleteConfirmPageChrome openDeleteAccountPage() 
 	{
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		
 		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("html/body/div/div/div[1]/div[3]/div[1]/p[2]")));
 		driver.findElement(By.xpath("html/body/div/div/div[1]/div[3]/div[1]/p[2]/a")).click();
-		return new RedmineDeleteConfirmPageFirefox(driver);
+		return new RedmineDeleteConfirmPageChrome(driver);
 	}
 	
 }
