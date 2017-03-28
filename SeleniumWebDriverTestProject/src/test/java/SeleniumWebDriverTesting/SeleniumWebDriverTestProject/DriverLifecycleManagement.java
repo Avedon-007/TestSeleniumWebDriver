@@ -5,6 +5,7 @@ import java.util.concurrent.TimeUnit;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 
 public class DriverLifecycleManagement 
@@ -16,9 +17,11 @@ public class DriverLifecycleManagement
 	{
 		System.out.println("Launching Google Chrome browser.");		
 		System.setProperty("webdriver.chrome.driver", "D:\\Programs\\TEST\\Selenium\\chromedriver.exe");
-		driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("test-type");
+		driver = new ChromeDriver(options);
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();		
 		driver.get("http://demo.redmine.org/");
 		System.out.println("Google Chrome browser launched successfully");
 	}		
