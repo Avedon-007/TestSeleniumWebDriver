@@ -1,8 +1,12 @@
 package SelenideTesting.SelenideTestProject;
 
-import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.*;
+
+
 
 
 public class RedmineHomePageEdge 
@@ -16,16 +20,15 @@ public class RedmineHomePageEdge
 	}
 
 	public RedmineRegisterNewIssueEdge openSignUpPage() 
-	{		
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		driver.findElement(By.className("register")).click();		
+	{				
+		$(By.className("register")).click();		
 		return new RedmineRegisterNewIssueEdge(driver);
 	}
 
 	public RedmineLoginPageEdge openLogInPage() 
 	{
-		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
-		driver.findElement(By.className("login")).click();		
+	
+		$(By.className("login")).click();		
 		return new RedmineLoginPageEdge(driver);
 	}
 

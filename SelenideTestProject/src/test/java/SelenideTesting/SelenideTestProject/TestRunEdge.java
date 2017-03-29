@@ -7,7 +7,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
+import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Condition.*;
 
 
 
@@ -24,10 +25,9 @@ public class TestRunEdge
 	{
 		System.out.println("Launching Microsoft Edge browser.");
 		System.setProperty("webdriver.ie.driver", "D:\\Programs\\TEST\\Selenium\\MicrosoftEdgeWebDriver.exe");
-		driver = new InternetExplorerDriver();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver = new InternetExplorerDriver();		
 		driver.manage().window().maximize();
-		driver.get("http://demo.redmine.org/");
+		open("http://demo.redmine.org/");
 		System.out.println("Microsoft Edge browser launched successfully");
 	}		
 
