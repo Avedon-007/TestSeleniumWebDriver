@@ -2,7 +2,6 @@ package SelenideTesting.SelenideTestProject;
 
 
 import static org.testng.AssertJUnit.assertTrue;
-import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
